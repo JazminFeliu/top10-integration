@@ -1,4 +1,4 @@
-package org.example;
+package org.serpAPI_integration;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -80,7 +80,7 @@ public class Main {
                 JSONArray jsonArrayArticles = (JSONArray) mainJSonObject.get("articles");
                 System.out.println("Articles:");
 
-                Integer qarticles = (int) jsonArrayArticles.size();
+                Integer qarticles = jsonArrayArticles.size();
                 System.out.println("Total Articles: " + qarticles);
 
                 for (int i = 0; i < jsonArrayArticles.size(); i++) {
